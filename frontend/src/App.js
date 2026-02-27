@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LoadingScreen } from "./components/LoadingScreen";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { HomePage } from "./pages/HomePage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { WorkPage } from "./pages/WorkPage";
@@ -20,6 +21,7 @@ function App() {
       {isLoading && <LoadingScreen onLoadComplete={handleLoadComplete} />}
       <BrowserRouter>
         <div className="App">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
