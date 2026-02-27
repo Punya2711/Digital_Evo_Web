@@ -62,6 +62,14 @@ export const About = () => {
       ref={sectionRef}
       className="relative py-24 lg:py-32 bg-gradient-to-b from-[#000000] to-[#0A0F1C] overflow-hidden"
     >
+      {/* Animated background grid */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(rgba(245, 211, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(245, 211, 0, 0.1) 1px, transparent 1px)`,
+          backgroundSize: '50px 50px'
+        }}></div>
+      </div>
+      
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Big statement */}

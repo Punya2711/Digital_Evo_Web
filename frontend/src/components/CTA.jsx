@@ -14,9 +14,25 @@ export const CTA = () => {
     <section className="relative py-32 lg:py-40 overflow-hidden">
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0A0F1C] via-[#000000] to-[#0A0F1C]">
-        {/* Animated circles */}
+        {/* Multiple animated circles for depth */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#F5D300] rounded-full blur-[120px] opacity-10 animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#F5D300] rounded-full blur-[120px] opacity-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#F5D300] rounded-full blur-[100px] opacity-5 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Floating lines */}
+        {[...Array(5)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute h-px bg-gradient-to-r from-transparent via-[#F5D300]/20 to-transparent"
+            style={{
+              width: `${200 + Math.random() * 400}px`,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animation: `parallax-float ${10 + Math.random() * 10}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 5}s`
+            }}
+          />
+        ))}
       </div>
 
       {/* Dark overlay */}

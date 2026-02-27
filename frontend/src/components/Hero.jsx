@@ -37,6 +37,13 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Text Content */}
           <div className={`space-y-8 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+            {/* Brand name */}
+            <div className="mb-6 overflow-hidden">
+              <p className="font-cinzel text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[0.3em] text-[#F5D300] opacity-90 text-shimmer">
+                DIGITALEVO
+              </p>
+            </div>
+            
             <h1 className="font-orbitron text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="block text-[#F5F5F5]">DIGITAL</span>
               <span className="block text-[#F5F5F5]">MARKETING</span>
@@ -57,22 +64,31 @@ export const Hero = () => {
 
           {/* Right - Animated Logo */}
           <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 animate-float">
-              {/* Glowing background effect */}
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96" style={{ animation: 'parallax-float 6s ease-in-out infinite' }}>
+              {/* Multiple glowing layers */}
               <div className="absolute inset-0 bg-[#F5D300] rounded-full blur-[100px] opacity-20 animate-pulse-glow"></div>
+              <div className="absolute inset-8 bg-[#F5D300] rounded-full blur-[60px] opacity-15" style={{ animation: 'pulse-glow 4s ease-in-out infinite', animationDelay: '1s' }}></div>
               
               {/* Logo container */}
               <div className="relative w-full h-full flex items-center justify-center">
-                <div className="text-[#F5D300] font-orbitron text-8xl sm:text-9xl font-black smooth-transition hover:scale-110 cursor-pointer">
+                <div className="text-[#F5D300] font-orbitron text-8xl sm:text-9xl font-black smooth-transition hover:scale-110 cursor-pointer" style={{ filter: 'drop-shadow(0 0 20px rgba(245, 211, 0, 0.5))' }}>
                   D
                 </div>
               </div>
 
-              {/* Rotating ring */}
+              {/* Multiple rotating rings */}
               <div className="absolute inset-0 border-2 border-[#F5D300]/30 rounded-full" 
                    style={{ animation: 'spin 20s linear infinite' }} />
               <div className="absolute inset-4 border border-[#F5D300]/20 rounded-full" 
                    style={{ animation: 'spin 15s linear infinite reverse' }} />
+              <div className="absolute inset-8 border border-[#F5D300]/10 rounded-full" 
+                   style={{ animation: 'spin 25s linear infinite' }} />
+                   
+              {/* Orbital dots */}
+              <div className="absolute top-0 left-1/2 w-2 h-2 bg-[#F5D300] rounded-full" 
+                   style={{ animation: 'spin 8s linear infinite', transformOrigin: '0 150px' }} />
+              <div className="absolute top-0 left-1/2 w-2 h-2 bg-[#F5D300] rounded-full" 
+                   style={{ animation: 'spin 12s linear infinite reverse', transformOrigin: '0 180px' }} />
             </div>
           </div>
         </div>
