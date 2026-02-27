@@ -1,23 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import { Hero } from "./components/Hero";
-import { Services } from "./components/Services";
-import { CTA } from "./components/CTA";
-import { About } from "./components/About";
-import { Footer } from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LoadingScreen } from "./components/LoadingScreen";
+import { HomePage } from "./pages/HomePage";
+import { ServicesPage } from "./pages/ServicesPage";
+import { WorkPage } from "./pages/WorkPage";
+import { AboutPage } from "./pages/AboutPage";
+import { ContactPage } from "./pages/ContactPage";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Hero />
-        <Services />
-        <CTA />
-        <About />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <>
+      {isLoading && <LoadingScreen onLoadComplete={handleLoadComplete} />}
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/work" element={<WorkPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
