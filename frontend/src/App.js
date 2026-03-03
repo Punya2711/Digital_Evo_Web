@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { GlobalVideoBackground } from "./components/GlobalVideoBackground";
 import { HomePage } from "./pages/HomePage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { WorkPage } from "./pages/WorkPage";
@@ -19,8 +20,9 @@ function App() {
   return (
     <>
       {isLoading && <LoadingScreen onLoadComplete={handleLoadComplete} />}
+      {!isLoading && <GlobalVideoBackground />}
       <BrowserRouter>
-        <div className="App">
+        <div className="App relative z-10">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />

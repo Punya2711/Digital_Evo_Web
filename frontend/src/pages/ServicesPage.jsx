@@ -223,6 +223,87 @@ export const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Our Expertise Showcase with Images */}
+      <section className="py-20 lg:py-28 bg-gradient-to-b from-[#000000] to-[#0A0F1C]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16 space-y-6">
+            <h2 className="font-orbitron text-4xl sm:text-5xl lg:text-6xl font-bold">
+              <span className="text-[#F5F5F5]">Our </span>
+              <span className="gradient-text">Expertise</span>
+            </h2>
+            <p className="font-inter text-xl text-[#F5F5F5]/70 max-w-3xl mx-auto">
+              Delivering excellence across all digital channels with proven results
+            </p>
+            <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#F5D300] to-transparent mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Social Media Card */}
+            <div className="glass rounded-2xl overflow-hidden smooth-transition hover:border-[#F5D300]/50 hover:shadow-[0_0_40px_rgba(245,211,0,0.2)] group cursor-pointer">
+              <div className="relative h-72 overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o0w1owo6_Social%20media.png" 
+                  alt="Social Media Marketing"
+                  className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-transparent"></div>
+                <div className="absolute inset-0 border-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 smooth-transition"></div>
+              </div>
+              <div className="p-8">
+                <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-3 group-hover:text-[#FFE55C] smooth-transition">
+                  Social Media Excellence
+                </h3>
+                <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
+                  Engaging content strategies that build communities and drive meaningful conversations across platforms
+                </p>
+              </div>
+            </div>
+
+            {/* Billboard Card */}
+            <div className="glass rounded-2xl overflow-hidden smooth-transition hover:border-[#F5D300]/50 hover:shadow-[0_0_40px_rgba(245,211,0,0.2)] group cursor-pointer">
+              <div className="relative h-72 overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/v31nxcgh_Billboard.png" 
+                  alt="Digital Billboard Advertising"
+                  className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-transparent"></div>
+                <div className="absolute inset-0 border-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 smooth-transition"></div>
+              </div>
+              <div className="p-8">
+                <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-3 group-hover:text-[#FFE55C] smooth-transition">
+                  Billboard Dominance
+                </h3>
+                <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
+                  High-impact outdoor campaigns that command attention in premium locations with strategic placement
+                </p>
+              </div>
+            </div>
+
+            {/* Website Card */}
+            <div className="glass rounded-2xl overflow-hidden smooth-transition hover:border-[#F5D300]/50 hover:shadow-[0_0_40px_rgba(245,211,0,0.2)] group cursor-pointer">
+              <div className="relative h-72 overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o3sdsgtv_website.png" 
+                  alt="Web Design & Development"
+                  className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-transparent"></div>
+                <div className="absolute inset-0 border-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 smooth-transition"></div>
+              </div>
+              <div className="p-8">
+                <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-3 group-hover:text-[#FFE55C] smooth-transition">
+                  Web Innovation
+                </h3>
+                <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
+                  Cutting-edge digital solutions that merge technology with creative vision and user experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#000000] via-[#0A0F1C] to-[#000000]"></div>

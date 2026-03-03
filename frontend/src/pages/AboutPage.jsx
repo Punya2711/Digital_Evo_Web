@@ -152,53 +152,81 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Our Team */}
       <section className="py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16 space-y-6">
             <h2 className="font-orbitron text-4xl sm:text-5xl font-bold text-[#F5F5F5]">
-              Our <span className="gradient-text">Journey</span>
+              Our <span className="gradient-text">Team</span>
             </h2>
+            <p className="font-inter text-xl text-[#F5F5F5]/70">
+              The minds behind Digital Evo's success
+            </p>
             <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#F5D300] to-transparent mx-auto"></div>
           </div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-[#F5D300]/20"></div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Team Member 1 */}
+            <div className="glass rounded-3xl p-10 relative overflow-hidden group hover:border-[#F5D300]/50 smooth-transition text-center">
+              <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/30 rounded-tr-3xl smooth-transition"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 border-b-2 border-l-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/30 rounded-bl-3xl smooth-transition"></div>
+              
+              <div className="relative z-10 space-y-4">
+                {/* Icon placeholder */}
+                <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
+                  <span className="text-4xl text-[#F5D300]">👨‍💼</span>
+                </div>
+                
+                <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
+                  Founder & CEO
+                </h3>
+                <div className="h-px w-16 bg-[#F5D300]/30 mx-auto mb-4"></div>
+                <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
+                  Visionary leader with 10+ years in digital marketing. Drives strategy and innovation, transforming brands into market leaders.
+                </p>
+              </div>
+            </div>
 
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => {
-                const isVisible = visibleMilestones.includes(index);
+            {/* Team Member 2 */}
+            <div className="glass rounded-3xl p-10 relative overflow-hidden group hover:border-[#F5D300]/50 smooth-transition text-center">
+              <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/30 rounded-tr-3xl smooth-transition"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 border-b-2 border-l-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/30 rounded-bl-3xl smooth-transition"></div>
+              
+              <div className="relative z-10 space-y-4">
+                {/* Icon placeholder */}
+                <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
+                  <span className="text-4xl text-[#F5D300]">🎨</span>
+                </div>
+                
+                <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
+                  Creative Director
+                </h3>
+                <div className="h-px w-16 bg-[#F5D300]/30 mx-auto mb-4"></div>
+                <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
+                  Award-winning creative mind specializing in brand identity and visual storytelling that captivates and converts.
+                </p>
+              </div>
+            </div>
 
-                return (
-                  <div
-                    key={index}
-                    ref={(el) => milestonesRef.current[index] = el}
-                    data-index={index}
-                    className={`relative pl-20 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
-                    style={{ animationDelay: `${index * 0.2}s` }}>
-
-                    {/* Dot */}
-                    <div className="absolute left-6 top-2 w-5 h-5 rounded-full bg-[#F5D300] border-4 border-[#000000]" style={{ boxShadow: '0 0 20px rgba(245, 211, 0, 0.5)' }}></div>
-
-                    {/* Content */}
-                    <div className="glass rounded-2xl p-6 hover:border-[#F5D300]/50 smooth-transition">
-                      <div className="flex items-center gap-4 mb-3">
-                        <span className="font-orbitron text-2xl font-bold text-[#F5D300]">
-                          {milestone.year}
-                        </span>
-                        <div className="h-px flex-1 bg-[#F5D300]/20"></div>
-                      </div>
-                      <h3 className="font-orbitron text-xl font-bold text-[#F5F5F5] mb-2">
-                        {milestone.title}
-                      </h3>
-                      <p className="font-inter text-[#F5F5F5]/70">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>);
-
-              })}
+            {/* Team Member 3 */}
+            <div className="glass rounded-3xl p-10 relative overflow-hidden group hover:border-[#F5D300]/50 smooth-transition text-center">
+              <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/30 rounded-tr-3xl smooth-transition"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 border-b-2 border-l-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/30 rounded-bl-3xl smooth-transition"></div>
+              
+              <div className="relative z-10 space-y-4">
+                {/* Icon placeholder */}
+                <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
+                  <span className="text-4xl text-[#F5D300]">📊</span>
+                </div>
+                
+                <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
+                  Performance Manager
+                </h3>
+                <div className="h-px w-16 bg-[#F5D300]/30 mx-auto mb-4"></div>
+                <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
+                  Data-driven strategist optimizing campaigns for maximum ROI. Turns analytics into actionable growth insights.
+                </p>
+              </div>
             </div>
           </div>
         </div>
