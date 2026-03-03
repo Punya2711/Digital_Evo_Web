@@ -19,18 +19,18 @@ export const Hero = () => {
       
       {/* Animated particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) =>
-        <div
-          key={i}
-          className="absolute w-1 h-1 bg-[#F5D300] rounded-full opacity-30"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animation: `float ${3 + Math.random() * 4}s ease-in-out infinite`,
-            animationDelay: `${Math.random() * 2}s`
-          }} />
-
-        )}
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-[#F5D300] rounded-full opacity-30"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animation: `float ${3 + Math.random() * 4}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 2}s`
+            }}
+          />
+        ))}
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
@@ -39,8 +39,8 @@ export const Hero = () => {
           <div className={`space-y-8 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
             {/* Brand name */}
             <div className="mb-6 overflow-hidden">
-              <p className="font-cinzel text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[0.3em] text-[#F5D300] opacity-90 text-shimmer">DIGITAL EVO
-
+              <p className="font-cinzel text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[0.3em] text-[#F5D300] opacity-90 text-shimmer">
+                DIGITAL EVO
               </p>
             </div>
             
@@ -56,44 +56,54 @@ export const Hero = () => {
 
             <button
               onClick={scrollToServices}
-              className="group btn-glow relative px-8 py-4 bg-[#F5D300] text-[#000000] font-orbitron font-semibold rounded-full smooth-transition hover:bg-[#FFE55C] hover:shadow-[0_0_30px_rgba(245,211,0,0.5)] overflow-hidden">
-
+              className="group btn-glow relative px-8 py-4 bg-[#F5D300] text-[#000000] font-orbitron font-semibold rounded-full smooth-transition hover:bg-[#FFE55C] hover:shadow-[0_0_30px_rgba(245,211,0,0.5)] overflow-hidden"
+            >
               <span className="relative z-10">Explore Services</span>
             </button>
           </div>
 
           {/* Right - Animated Logo */}
           <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96" style={{ animation: 'parallax-float 6s ease-in-out infinite' }}>
-              {/* Multiple glowing layers */}
-              <div className="absolute inset-0 bg-[#F5D300] rounded-full blur-[100px] opacity-20 animate-pulse-glow"></div>
-              <div className="absolute inset-8 bg-[#F5D300] rounded-full blur-[60px] opacity-15" style={{ animation: 'pulse-glow 4s ease-in-out infinite', animationDelay: '1s' }}></div>
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px]" style={{ animation: 'parallax-float 8s ease-in-out infinite' }}>
+              {/* Multiple glowing layers with pulsing effect */}
+              <div className="absolute inset-0 bg-[#F5D300] rounded-full blur-[120px] opacity-20 animate-pulse-glow"></div>
+              <div className="absolute inset-8 bg-[#F5D300] rounded-full blur-[80px] opacity-15" style={{ animation: 'pulse-glow 5s ease-in-out infinite', animationDelay: '1s' }}></div>
               
-              {/* Logo container */}
+              {/* Main logo container with gradient border */}
               <div className="relative w-full h-full flex items-center justify-center">
-                <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#000000] border-4 border-[#F5D300]/30 flex items-center justify-center p-6">
+                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-[#F5D300]/40 bg-gradient-to-br from-[#0A0F1C] via-[#000000] to-[#0A0F1C] p-10 smooth-transition hover:border-[#F5D300]/60 hover:scale-105 cursor-pointer group">
+                  {/* Inner glow ring */}
+                  <div className="absolute inset-4 rounded-full border border-[#F5D300]/20 group-hover:border-[#F5D300]/40 smooth-transition"></div>
+                  
+                  {/* Logo image */}
                   <img 
                     src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/si29a1eb_logo.jpg" 
                     alt="Digital Evo Logo"
-                    className="w-full h-full object-contain smooth-transition hover:scale-105 cursor-pointer"
-                    style={{ filter: 'drop-shadow(0 0 20px rgba(245, 211, 0, 0.5))' }}
+                    className="relative z-10 w-full h-full object-contain smooth-transition group-hover:scale-105"
+                    style={{ filter: 'drop-shadow(0 0 15px rgba(245, 211, 0, 0.4))' }}
                   />
+                  
+                  {/* Rotating accent ring */}
+                  <div className="absolute inset-0 rounded-full" style={{
+                    background: 'conic-gradient(from 0deg, transparent 0%, rgba(245, 211, 0, 0.3) 10%, transparent 20%, transparent 100%)',
+                    animation: 'spin 12s linear infinite'
+                  }}></div>
                 </div>
               </div>
 
-              {/* Multiple rotating rings */}
-              <div className="absolute inset-0 border-2 border-[#F5D300]/30 rounded-full"
-              style={{ animation: 'spin 20s linear infinite' }} />
-              <div className="absolute inset-4 border border-[#F5D300]/20 rounded-full"
-              style={{ animation: 'spin 15s linear infinite reverse' }} />
-              <div className="absolute inset-8 border border-[#F5D300]/10 rounded-full"
-              style={{ animation: 'spin 25s linear infinite' }} />
+              {/* Multiple rotating rings around logo */}
+              <div className="absolute inset-0 border-2 border-[#F5D300]/20 rounded-full" 
+                   style={{ animation: 'spin 25s linear infinite' }} />
+              <div className="absolute inset-6 border border-[#F5D300]/15 rounded-full" 
+                   style={{ animation: 'spin 18s linear infinite reverse' }} />
+              <div className="absolute inset-12 border border-[#F5D300]/10 rounded-full" 
+                   style={{ animation: 'spin 30s linear infinite' }} />
                    
-              {/* Orbital dots */}
-              <div className="absolute top-0 left-1/2 w-2 h-2 bg-[#F5D300] rounded-full"
-              style={{ animation: 'spin 8s linear infinite', transformOrigin: '0 150px' }} />
-              <div className="absolute top-0 left-1/2 w-2 h-2 bg-[#F5D300] rounded-full"
-              style={{ animation: 'spin 12s linear infinite reverse', transformOrigin: '0 180px' }} />
+              {/* Orbital glowing dots */}
+              <div className="absolute top-0 left-1/2 w-3 h-3 bg-[#F5D300] rounded-full shadow-[0_0_10px_rgba(245,211,0,0.8)]" 
+                   style={{ animation: 'spin 10s linear infinite', transformOrigin: '0 225px' }} />
+              <div className="absolute top-0 left-1/2 w-2 h-2 bg-[#F5D300] rounded-full shadow-[0_0_8px_rgba(245,211,0,0.8)]" 
+                   style={{ animation: 'spin 15s linear infinite reverse', transformOrigin: '0 192px' }} />
             </div>
           </div>
         </div>
@@ -101,14 +111,14 @@ export const Hero = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <button
+        <button 
           onClick={scrollToServices}
-          className="flex flex-col items-center gap-2 smooth-transition hover:gap-4 cursor-pointer">
-
+          className="flex flex-col items-center gap-2 smooth-transition hover:gap-4 cursor-pointer"
+        >
           <span className="text-[#F5D300] text-sm font-inter uppercase tracking-wider">Scroll</span>
           <ChevronDown className="w-6 h-6 text-[#F5D300] animate-bounce" />
         </button>
       </div>
-    </section>);
-
+    </section>
+  );
 };
