@@ -4,35 +4,35 @@ import { Footer } from '../components/Footer';
 import { Target, Zap, Award, Users } from 'lucide-react';
 
 const milestones = [
-  { year: '2020', title: 'Founded', description: 'Digital Evo begins with a vision to transform digital marketing' },
-  { year: '2021', title: 'First Major Campaign', description: '50+ brands onboarded, 10M+ reach achieved' },
-  { year: '2022', title: 'Expansion', description: 'Opened second office in Mysuru, team of 15+' },
-  { year: '2023', title: 'Industry Recognition', description: 'Award-winning campaigns, 100+ projects completed' },
-  { year: '2024', title: 'Scale', description: '150+ projects, 80+ brands, 5M+ monthly reach' }
-];
+{ year: '2020', title: 'Founded', description: 'Digital Evo begins with a vision to transform digital marketing' },
+{ year: '2021', title: 'First Major Campaign', description: '50+ brands onboarded, 10M+ reach achieved' },
+{ year: '2022', title: 'Expansion', description: 'Opened second office in Mysuru, team of 15+' },
+{ year: '2023', title: 'Industry Recognition', description: 'Award-winning campaigns, 100+ projects completed' },
+{ year: '2024', title: 'Scale', description: '150+ projects, 80+ brands, 5M+ monthly reach' }];
+
 
 const values = [
-  {
-    icon: Target,
-    title: 'Performance-Driven',
-    description: 'Every campaign is engineered for measurable results, not vanity metrics.'
-  },
-  {
-    icon: Zap,
-    title: 'Speed & Precision',
-    description: 'We move fast, iterate faster, and deliver excellence without compromise.'
-  },
-  {
-    icon: Award,
-    title: 'Bold Creativity',
-    description: 'We don\'t follow trends—we set them. Our work stands out and speaks volumes.'
-  },
-  {
-    icon: Users,
-    title: 'Client Success',
-    description: 'Your growth is our mission. We succeed when you scale.'
-  }
-];
+{
+  icon: Target,
+  title: 'Performance-Driven',
+  description: 'Every campaign is engineered for measurable results, not vanity metrics.'
+},
+{
+  icon: Zap,
+  title: 'Speed & Precision',
+  description: 'We move fast, iterate faster, and deliver excellence without compromise.'
+},
+{
+  icon: Award,
+  title: 'Bold Creativity',
+  description: 'We don\'t follow trends—we set them. Our work stands out and speaks volumes.'
+},
+{
+  icon: Users,
+  title: 'Client Success',
+  description: 'Your growth is our mission. We succeed when you scale.'
+}];
+
 
 export const AboutPage = () => {
   const [visibleMilestones, setVisibleMilestones] = useState([]);
@@ -44,14 +44,14 @@ export const AboutPage = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = entry.target.getAttribute('data-index');
-            setVisibleMilestones(prev => [...new Set([...prev, parseInt(index)])]);
+            setVisibleMilestones((prev) => [...new Set([...prev, parseInt(index)])]);
           }
         });
       },
       { threshold: 0.3 }
     );
 
-    milestonesRef.current.forEach(ref => {
+    milestonesRef.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
@@ -81,8 +81,8 @@ export const AboutPage = () => {
             <span className="gradient-text">US</span>
           </h1>
           
-          <p className="font-inter text-xl text-[#F5F5F5]/70 max-w-3xl mx-auto leading-relaxed">
-            We don't chase clients. Clients chase us.
+          <p className="font-inter text-xl text-[#F5F5F5]/70 max-w-3xl mx-auto leading-relaxed">Turning vision into impactful digital presence.
+
           </p>
         </div>
       </section>
@@ -169,15 +169,15 @@ export const AboutPage = () => {
             <div className="space-y-12">
               {milestones.map((milestone, index) => {
                 const isVisible = visibleMilestones.includes(index);
-                
+
                 return (
                   <div
                     key={index}
-                    ref={el => milestonesRef.current[index] = el}
+                    ref={(el) => milestonesRef.current[index] = el}
                     data-index={index}
                     className={`relative pl-20 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
+                    style={{ animationDelay: `${index * 0.2}s` }}>
+
                     {/* Dot */}
                     <div className="absolute left-6 top-2 w-5 h-5 rounded-full bg-[#F5D300] border-4 border-[#000000]" style={{ boxShadow: '0 0 20px rgba(245, 211, 0, 0.5)' }}></div>
 
@@ -196,8 +196,8 @@ export const AboutPage = () => {
                         {milestone.description}
                       </p>
                     </div>
-                  </div>
-                );
+                  </div>);
+
               })}
             </div>
           </div>
@@ -217,13 +217,13 @@ export const AboutPage = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
               const Icon = value.icon;
-              
+
               return (
                 <div
                   key={index}
                   className="glass rounded-2xl p-8 text-center hover:border-[#F5D300]/50 smooth-transition group animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
+                  style={{ animationDelay: `${index * 0.1}s` }}>
+
                   <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
                     <Icon className="w-8 h-8 text-[#F5D300]" />
                   </div>
@@ -233,14 +233,14 @@ export const AboutPage = () => {
                   <p className="font-inter text-sm text-[#F5F5F5]/70">
                     {value.description}
                   </p>
-                </div>
-              );
+                </div>);
+
             })}
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
