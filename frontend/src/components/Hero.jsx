@@ -71,9 +71,12 @@ export const Hero = () => {
               
               {/* Logo container */}
               <div className="relative w-full h-full flex items-center justify-center">
-                <div className="text-[#F5D300] font-orbitron text-8xl sm:text-9xl font-black smooth-transition hover:scale-110 cursor-pointer" style={{ filter: 'drop-shadow(0 0 20px rgba(245, 211, 0, 0.5))' }}>
-                  D
-                </div>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/si29a1eb_logo.jpg" 
+                  alt="Digital Evo Logo"
+                  className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover smooth-transition hover:scale-110 cursor-pointer"
+                  style={{ filter: 'drop-shadow(0 0 20px rgba(245, 211, 0, 0.5))' }}
+                />
               </div>
 
               {/* Multiple rotating rings */}

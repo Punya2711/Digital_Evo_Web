@@ -35,10 +35,14 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-3">
             <div className="relative">
-              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
-                <span className="text-[#F5D300] font-orbitron text-xl font-black">D</span>
+              <div className="w-10 h-10 flex items-center justify-center rounded-full overflow-hidden bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/si29a1eb_logo.jpg" 
+                  alt="Digital Evo"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="absolute inset-0 bg-[#F5D300] rounded-lg blur-md opacity-0 group-hover:opacity-30 smooth-transition"></div>
+              <div className="absolute inset-0 bg-[#F5D300] rounded-full blur-md opacity-0 group-hover:opacity-30 smooth-transition"></div>
             </div>
             <span className="font-cinzel text-xl font-semibold text-[#F5D300] tracking-wider">DIGITAL EVO
 

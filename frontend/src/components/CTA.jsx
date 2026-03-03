@@ -12,8 +12,19 @@ export const CTA = () => {
 
   return (
     <section className="relative py-32 lg:py-40 overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0F1C] via-[#000000] to-[#0A0F1C]">
+      {/* Background Video */}
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/1tp6d6p7_Scene.mp4" type="video/mp4" />
+      </video>
+
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0F1C]/80 via-[#000000]/80 to-[#0A0F1C]/80">
         {/* Multiple animated circles for depth */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#F5D300] rounded-full blur-[120px] opacity-10 animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#F5D300] rounded-full blur-[120px] opacity-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -35,8 +46,8 @@ export const CTA = () => {
         ))}
       </div>
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#000000]/50"></div>
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-[#000000]/40"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center space-y-12">

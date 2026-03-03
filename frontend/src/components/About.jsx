@@ -153,6 +153,80 @@ export const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Our Work Showcase - Added Images Section */}
+        <div className="mt-20 pt-20 border-t border-[#F5D300]/10">
+          <div className="text-center mb-12">
+            <h3 className="font-orbitron text-3xl sm:text-4xl font-bold text-[#F5F5F5] mb-4">
+              Our <span className="gradient-text">Expertise</span>
+            </h3>
+            <p className="font-inter text-[#F5F5F5]/70">
+              Delivering excellence across all digital channels
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Social Media Card */}
+            <div className="glass rounded-2xl overflow-hidden smooth-transition hover:border-[#F5D300]/50 hover:shadow-[0_0_30px_rgba(245,211,0,0.15)] group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o0w1owo6_Social%20media.png" 
+                  alt="Social Media Marketing"
+                  className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/50 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="font-orbitron text-xl font-bold text-[#F5D300] mb-2">
+                  Social Media Excellence
+                </h4>
+                <p className="font-inter text-[#F5F5F5]/70 text-sm">
+                  Engaging content strategies that build communities and drive conversations
+                </p>
+              </div>
+            </div>
+
+            {/* Billboard Card */}
+            <div className="glass rounded-2xl overflow-hidden smooth-transition hover:border-[#F5D300]/50 hover:shadow-[0_0_30px_rgba(245,211,0,0.15)] group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/v31nxcgh_Billboard.png" 
+                  alt="Digital Billboard Advertising"
+                  className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/50 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="font-orbitron text-xl font-bold text-[#F5D300] mb-2">
+                  Billboard Dominance
+                </h4>
+                <p className="font-inter text-[#F5F5F5]/70 text-sm">
+                  High-impact outdoor campaigns that command attention in premium locations
+                </p>
+              </div>
+            </div>
+
+            {/* Website Card */}
+            <div className="glass rounded-2xl overflow-hidden smooth-transition hover:border-[#F5D300]/50 hover:shadow-[0_0_30px_rgba(245,211,0,0.15)] group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o3sdsgtv_website.png" 
+                  alt="Web Design & Development"
+                  className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/50 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="font-orbitron text-xl font-bold text-[#F5D300] mb-2">
+                  Web Innovation
+                </h4>
+                <p className="font-inter text-[#F5F5F5]/70 text-sm">
+                  Cutting-edge digital solutions that merge technology with creative vision
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Decorative elements */}
