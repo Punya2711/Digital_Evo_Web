@@ -96,7 +96,7 @@ export const ContactPage = () => {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/digitalevo.ads"
+                  href="https://www.instagram.com/digital_evo.ads?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="glass rounded-2xl p-6 flex items-start gap-4 hover:border-[#F5D300]/50 smooth-transition group"
@@ -161,7 +161,6 @@ export const ContactPage = () => {
                     className={`w-full px-4 py-3 bg-[#000000]/50 border rounded-xl font-inter text-[#F5F5F5] smooth-transition focus:outline-none ${
                       focusedField === 'name' ? 'border-[#F5D300] shadow-[0_0_20px_rgba(245,211,0,0.2)]' : 'border-[#F5D300]/20'
                     }`}
-                    placeholder="John Doe"
                   />
                 </div>
 
@@ -181,7 +180,6 @@ export const ContactPage = () => {
                     className={`w-full px-4 py-3 bg-[#000000]/50 border rounded-xl font-inter text-[#F5F5F5] smooth-transition focus:outline-none ${
                       focusedField === 'email' ? 'border-[#F5D300] shadow-[0_0_20px_rgba(245,211,0,0.2)]' : 'border-[#F5D300]/20'
                     }`}
-                    placeholder="john@company.com"
                   />
                 </div>
 
@@ -200,7 +198,6 @@ export const ContactPage = () => {
                     className={`w-full px-4 py-3 bg-[#000000]/50 border rounded-xl font-inter text-[#F5F5F5] smooth-transition focus:outline-none ${
                       focusedField === 'phone' ? 'border-[#F5D300] shadow-[0_0_20px_rgba(245,211,0,0.2)]' : 'border-[#F5D300]/20'
                     }`}
-                    placeholder="+91 98765 43210"
                   />
                 </div>
 
@@ -245,7 +242,6 @@ export const ContactPage = () => {
                     className={`w-full px-4 py-3 bg-[#000000]/50 border rounded-xl font-inter text-[#F5F5F5] smooth-transition focus:outline-none resize-none ${
                       focusedField === 'message' ? 'border-[#F5D300] shadow-[0_0_20px_rgba(245,211,0,0.2)]' : 'border-[#F5D300]/20'
                     }`}
-                    placeholder="Tell us about your project..."
                   ></textarea>
                 </div>
 

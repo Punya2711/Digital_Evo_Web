@@ -46,7 +46,7 @@ export const Footer = () => {
             </h4>
             <div className="space-y-3">
               <a 
-                href="https://instagram.com/digitalevo.ads"
+                href="https://www.instagram.com/digital_evo.ads?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 font-inter text-[#F5F5F5]/70 hover:text-[#F5D300] smooth-transition text-sm group"

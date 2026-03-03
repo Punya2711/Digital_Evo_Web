@@ -71,11 +71,11 @@ export const Hero = () => {
               
               {/* Logo container */}
               <div className="relative w-full h-full flex items-center justify-center">
-                <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-[#000000] border-4 border-[#F5D300]/30">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#000000] border-4 border-[#F5D300]/30 flex items-center justify-center p-6">
                   <img 
                     src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/si29a1eb_logo.jpg" 
                     alt="Digital Evo Logo"
-                    className="w-full h-full object-contain p-4 smooth-transition hover:scale-110 cursor-pointer"
+                    className="w-full h-full object-contain smooth-transition hover:scale-105 cursor-pointer"
                     style={{ filter: 'drop-shadow(0 0 20px rgba(245, 211, 0, 0.5))' }}
                   />
                 </div>

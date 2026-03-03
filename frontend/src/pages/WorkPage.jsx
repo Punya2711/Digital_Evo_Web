@@ -93,7 +93,7 @@ export const WorkPage = () => {
 
           {/* Instagram CTA */}
           <a
-            href="https://instagram.com/digitalevo.ads"
+            href="https://www.instagram.com/digital_evo.ads?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 btn-glow relative px-8 py-4 bg-transparent border-2 border-[#F5D300] text-[#F5D300] font-orbitron font-semibold rounded-full smooth-transition hover:bg-[#F5D300] hover:text-[#000000] hover:shadow-[0_0_30px_rgba(245,211,0,0.4)]"
@@ -200,7 +200,7 @@ export const WorkPage = () => {
               Want to see more? Check out our Instagram
             </p>
             <a
-              href="https://instagram.com/digitalevo.ads"
+              href="https://www.instagram.com/digital_evo.ads?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#F5D300]/10 text-[#F5D300] font-orbitron font-semibold rounded-full smooth-transition hover:bg-[#F5D300]/20 border border-[#F5D300]/20"

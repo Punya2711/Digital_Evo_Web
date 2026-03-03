@@ -3,7 +3,7 @@ import { Instagram, Phone } from 'lucide-react';
 
 export const CTA = () => {
   const handleInstagramClick = () => {
-    window.open('https://instagram.com/digitalevo.ads', '_blank');
+    window.open('https://www.instagram.com/digital_evo.ads?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank');
   };
 
   const handlePhoneClick = () => {
