@@ -7,31 +7,36 @@ const services = [
     icon: Smartphone,
     title: 'Social Media Handling',
     description: 'Strategic content creation and community management across all platforms to build your digital presence.',
-    gradient: 'from-[#F5D300]/20 to-transparent'
+    gradient: 'from-[#F5D300]/20 to-transparent',
+    image: 'social.png'
   },
   {
     icon: Video,
     title: 'AdFilm Production',
     description: 'Cinematic storytelling that captures attention and drives action through professional video production.',
-    gradient: 'from-[#F5D300]/15 to-transparent'
+    gradient: 'from-[#F5D300]/15 to-transparent',
+    image: 'ad.png'
   },
   {
     icon: MonitorPlay,
     title: 'Digital Billboard',
     description: 'High-impact outdoor advertising solutions that command attention in prime locations.',
-    gradient: 'from-[#F5D300]/20 to-transparent'
+    gradient: 'from-[#F5D300]/20 to-transparent',
+    image: 'Billboard.png'
   },
   {
     icon: Palette,
     title: 'Web Design',
     description: 'Premium, conversion-focused websites that blend aesthetics with performance and user experience.',
-    gradient: 'from-[#F5D300]/15 to-transparent'
+    gradient: 'from-[#F5D300]/15 to-transparent',
+    image: 'website.png'
   },
   {
     icon: Sparkles,
     title: 'Branding & Identity',
     description: 'Comprehensive brand development from strategy to visual identity that resonates with your audience.',
     gradient: 'from-[#F5D300]/10 to-transparent',
+    image: 'Branding.png',
     featured: true
   }
 ];
@@ -134,6 +139,10 @@ export const Services = () => {
                     boxShadow: isHovered ? '0 0 60px rgba(245, 211, 0, 0.2), inset 0 0 40px rgba(245, 211, 0, 0.05)' : 'none'
                   }}
                 >
+                  <div
+                    className="absolute inset-0 rounded-3xl bg-cover bg-center opacity-20 group-hover:opacity-30 smooth-transition"
+                      style={{ backgroundImage: `url(/${service.image})` }}
+  >                 </div>
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} rounded-3xl opacity-0 group-hover:opacity-100 smooth-transition`}></div>
                   <div className="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 rounded-tr-3xl smooth-transition"></div>
                   <div className="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 rounded-bl-3xl smooth-transition"></div>
@@ -186,7 +195,10 @@ export const Services = () => {
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} rounded-3xl opacity-0 group-hover:opacity-100 smooth-transition`}></div>
                     <div className="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 rounded-tr-3xl smooth-transition"></div>
                     <div className="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-[#F5D300]/0 group-hover:border-[#F5D300]/50 rounded-bl-3xl smooth-transition"></div>
-                    
+                    <div
+    className="absolute inset-0 rounded-3xl bg-cover bg-center opacity-20 group-hover:opacity-30 smooth-transition"
+    style={{ backgroundImage: `url(/${service.image})` }}
+  ></div>
                     <div className="relative z-10">
                       <div className="mb-8 w-16 h-16 flex items-center justify-center rounded-2xl bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition relative overflow-hidden">
                         <div className={`absolute inset-0 bg-[#F5D300]/10 ${isHovered ? 'animate-pulse' : ''}`}></div>

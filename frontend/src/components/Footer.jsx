@@ -52,7 +52,7 @@ export const Footer = () => {
                 className="flex items-center gap-3 font-inter text-[#F5F5F5]/70 hover:text-[#F5D300] smooth-transition text-sm group"
               >
                 <Instagram className="w-4 h-4 group-hover:scale-110 smooth-transition" />
-                @digitalevo.ads
+                @digital_evo.ads
               </a>
               <a 
                 href="https://wa.me/919380923767"

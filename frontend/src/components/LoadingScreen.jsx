@@ -42,7 +42,12 @@ export const LoadingScreen = ({ onLoadComplete }) => {
         <div className="relative">
           <div className="w-32 h-32 mx-auto flex items-center justify-center rounded-full border-2 border-[#F5D300]/30 animate-pulse-glow">
             <span className="text-[#F5D300] font-orbitron text-6xl font-black animate-pulse">
-              D
+              <img 
+                    src="/logo_final.png" 
+                    alt="Digital Evo Logo"
+                    className="relative z-10 w-full h-full object-contain smooth-transition group-hover:scale-105"
+                    
+                  />
             </span>
           </div>
           
@@ -56,7 +61,7 @@ export const LoadingScreen = ({ onLoadComplete }) => {
         {/* Brand name */}
         <div className="space-y-2">
           <h1 className="font-cinzel text-2xl font-semibold text-[#F5D300] tracking-[0.3em]">
-            DIGITALEVO
+            DIGITAL EVO
           </h1>
           <p className="font-inter text-sm text-[#F5F5F5]/50">
             Loading Excellence...

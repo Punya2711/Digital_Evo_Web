@@ -77,7 +77,7 @@ export const Hero = () => {
                   
                   {/* Logo image */}
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_digital-evo/artifacts/si29a1eb_logo.jpg" 
+                    src="/logo_final.png" 
                     alt="Digital Evo Logo"
                     className="relative z-10 w-full h-full object-contain smooth-transition group-hover:scale-105"
                     style={{ filter: 'drop-shadow(0 0 15px rgba(245, 211, 0, 0.4))' }}

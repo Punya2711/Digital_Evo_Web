@@ -17,7 +17,7 @@ const servicesData = [
       { title: 'Analytics', desc: 'Performance tracking and monthly insights reports' }
     ],
     gradient: 'from-[#F5D300]/10 via-[#F5D300]/5 to-transparent',
-    image: 'https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o0w1owo6_Social%20media.png'
+    image: 'social.png'
   },
   {
     id: 'adfilm',
@@ -32,7 +32,7 @@ const servicesData = [
       { title: 'Reels', desc: 'Short-form content optimized for social platforms' }
     ],
     gradient: 'from-[#F5D300]/10 via-[#F5D300]/5 to-transparent',
-    image: 'https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o0w1owo6_Social%20media.png'
+    image: 'ad.png'
   },
   {
     id: 'billboard',
@@ -47,7 +47,7 @@ const servicesData = [
       { title: 'Campaign Management', desc: 'End-to-end execution and performance tracking' }
     ],
     gradient: 'from-[#F5D300]/10 via-[#F5D300]/5 to-transparent',
-    image: 'https://customer-assets.emergentagent.com/job_digital-evo/artifacts/v31nxcgh_Billboard.png'
+    image: 'Billboard.png'
   },
   {
     id: 'web-design',
@@ -62,7 +62,7 @@ const servicesData = [
       { title: 'Performance', desc: 'Lightning-fast load times and seamless interactions' }
     ],
     gradient: 'from-[#F5D300]/10 via-[#F5D300]/5 to-transparent',
-    image: 'https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o3sdsgtv_website.png'
+    image: 'website.png'
   },
   {
     id: 'branding',
@@ -78,7 +78,7 @@ const servicesData = [
     ],
     gradient: 'from-[#F5D300]/10 via-[#F5D300]/5 to-transparent',
     featured: true,
-    image: 'https://customer-assets.emergentagent.com/job_digital-evo/artifacts/o3sdsgtv_website.png'
+    image: 'Branding.png'
   }
 ];
 

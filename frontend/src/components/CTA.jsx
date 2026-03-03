@@ -91,7 +91,7 @@ export const CTA = () => {
         {/* Contact info */}
         <div className="pt-8 space-y-2">
           <p className="font-inter text-[#F5F5F5]/60 text-sm">
-            @digitalevo.ads
+            @digital_evo.ads
           </p>
           <p className="font-inter text-[#F5D300] text-lg font-medium">
             +91 93809 23767

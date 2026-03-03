@@ -205,7 +205,7 @@ export const WorkPage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#F5D300]/10 text-[#F5D300] font-orbitron font-semibold rounded-full smooth-transition hover:bg-[#F5D300]/20 border border-[#F5D300]/20"
             >
-              @digitalevo.ads
+              @digital_evo.ads
               <ExternalLink className="w-5 h-5" />
             </a>
           </div>

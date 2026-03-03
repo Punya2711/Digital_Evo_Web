@@ -109,7 +109,7 @@ export const ContactPage = () => {
                       Instagram
                     </h3>
                     <p className="font-inter text-[#F5D300] font-medium">
-                      @digitalevo.ads
+                      @digital_evo.ads
                     </p>
                   </div>
                 </a>
