@@ -37,7 +37,7 @@ export const Header = () => {
             <div className="relative">
               <div className="w-10 h-10 flex items-center justify-center rounded-full overflow-hidden bg-[#F5D300]/10 group-hover:bg-[#F5D300]/20 smooth-transition">
                 <img 
-                  src="" 
+                  src="log.png" 
                   alt="Digital Evo"
                   className="w-full h-full object-cover"
                 />
