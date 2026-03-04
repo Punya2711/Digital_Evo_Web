@@ -178,7 +178,7 @@ export const AboutPage = () => {
                 </div>
                 
                 <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
-                  Abhishek Vishnu -
+                  Abhishek Vishnu <br/>
                   Founder/Cinematographer
                   /Editor
                 </h3>
@@ -201,7 +201,7 @@ export const AboutPage = () => {
                 </div>
                 
                 <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
-                  Kishor Gowda
+                  Kishor Gowda <br/>
                   Co-Founder/Creative Director
                 </h3>
                 <div className="h-px w-16 bg-[#F5D300]/30 mx-auto mb-4"></div>
@@ -223,7 +223,7 @@ export const AboutPage = () => {
                 </div>
                 
                 <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
-                  Deepthi Bhandari
+                  Deepthi Bhandari <br/>
                   Director- Sales & Operations
                 </h3>
                 <div className="h-px w-16 bg-[#F5D300]/30 mx-auto mb-4"></div>
