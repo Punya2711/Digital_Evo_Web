@@ -178,8 +178,9 @@ export const AboutPage = () => {
                 </div>
                 
                 <h3 className="font-orbitron text-2xl font-bold text-[#F5D300] mb-2">
-                  Abhishek Vishnu 
-                  Founder/Cinematographer/Editor
+                  Abhishek Vishnu -
+                  Founder/Cinematographer
+                  /Editor
                 </h3>
                 <div className="h-px w-16 bg-[#F5D300]/30 mx-auto mb-4"></div>
                 <p className="font-inter text-[#F5F5F5]/70 leading-relaxed">
